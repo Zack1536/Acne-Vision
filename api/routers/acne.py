@@ -28,7 +28,7 @@ logger = logging.getLogger(__name__)
 # ─────────────────────────────────────────────
 # KONFIGURASI
 # ─────────────────────────────────────────────
-MODEL_PATH    = os.getenv("MODEL_PATH", "../output/best_model.h5")
+MODEL_PATH    = Path(__file__).resolve().parent.parent.parent / "output" / "best_model.h5"
 IMG_SIZE      = (128, 128)
 CLASS_NAMES   = ["Level 0", "Level 1", "Level 2", "Level 3"]
 CLASS_DESC    = {
