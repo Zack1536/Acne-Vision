@@ -7,3 +7,4 @@ pillow==10.2.0
 python-multipart
 pillow
 numpy
+scikit-learn
