@@ -33,8 +33,8 @@ logger = logging.getLogger(__name__)
 # ─────────────────────────────────────────────
 # KONFIGURASI
 # ─────────────────────────────────────────────
-CNN_MODEL_PATH      = os.getenv("CNN_MODEL_PATH",      "../output/best_model.h5")
-SKINCARE_MODEL_PATH = os.getenv("SKINCARE_MODEL_PATH", "../output/skincare_cnn_integrated.pkl")
+CNN_MODEL_PATH      = Path(__file__).resolve().parent.parent.parent / "output" / "best_model.h5"
+SKINCARE_MODEL_PATH = Path(__file__).resolve().parent.parent.parent / "output" / "skincare_cnn_integrated.pkl"
 
 IMG_SIZE      = (128, 128)
 ALLOWED_TYPES = {"image/jpeg", "image/png", "image/jpg"}
